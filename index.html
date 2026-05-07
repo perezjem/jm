@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0b0e14; /* Deep dark background */
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            color: white;
+        }
+
+        .player-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            width: 300px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .album-art {
+            width: 240px;
+            height: 240px;
+            margin: 0 auto 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        .album-art img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps the photo from looking squished */
+        }
+
+        h2 { margin: 10px 0 5px; font-size: 1.4rem; }
+        p { opacity: 0.5; margin-bottom: 20px; font-size: 0.9rem; }
+
+        audio {
+            width: 100%;
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="player-card">
+        <div class="album-art">
+            <!-- PASTE YOUR IMAGE URL BELOW -->
+            <img src="https://i.postimg.cc/WbPZH1Pm/image2.jpg" alt="Album Art">
+        </div>
+        
+        <h2>Watching from my desk</h2>
+        <p>JM</p>
+        
+        <audio controls>
+            <source src="https://absent-indigo-je2jvvldnk.edgeone.app/watching%20from%20my%20desk.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+</body>
+</html>
